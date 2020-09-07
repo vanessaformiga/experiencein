@@ -1,0 +1,22 @@
+<!-- experiencein/usuarios/templates/base_usuario -->
+
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static "styles/bootstrap.css" %}" rel="stylesheet">
+    <link href="{% static "styles/signin.css" %}" rel="stylesheet">
+    <title>ExperienceIn</title>
+</head>
+<body>
+    <div class="container">
+        {% block body %}
+
+        {% endblock %}
+    </div>
+    
+</body>
+</html>
