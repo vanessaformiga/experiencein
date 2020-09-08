@@ -29,7 +29,7 @@
         {% with total_de_convites=perfil_logado.convites_recebidos.count %}
         {% if total_de_convites  %}
             <div class="panel-heading">
-                <strong>Voce tem {{total_de_convites}} convite {{total_de_convites|pluralize}} aguardando aprovacao</strong>
+                <strong>Você tem {{total_de_convites}} convite {{total_de_convites|pluralize}} aguardando aprovação</strong>
             </div>
             <ul class="list-group">
                 {% for convite in perfil_logado.convites_recebidos.all %}
@@ -52,7 +52,7 @@
         {% with total_de_contatos=perfil_logado.contatos.count %}
             {% if total_de_contatos %}
                 <div class="panel-heading">
-                    <strong>Voce tem {{total_de_contatos}}contato {{total_de_contatos|pluralize}}</strong>
+                    <strong>Você tem {{total_de_contatos}}contato {{total_de_contatos|pluralize}}</strong>
                 </div>
                 <ul class="list-group">
                     {% for contato in perfil_logado.contatos.all %}
@@ -61,7 +61,7 @@
                 </ul>
             {% else %}
                 <div class="panel-body">
-                    <p>Voce nao possui contato no momento :( </p>
+                    <p>Você nao possui contato no momento :( </p>
                 </div>
             {% endif %}
         {% endwith %}
